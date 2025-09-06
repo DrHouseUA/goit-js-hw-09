@@ -80,7 +80,7 @@ images.map(({ preview: previewUrl, original: originalUrl, description }) => {
        class="gallery-image"
        src="${previewUrl}"
        data-source="${originalUrl}"
-       alt="" title="${description}"
+       alt="${description}"
       />
     </a>
   </li>
@@ -92,4 +92,5 @@ ulEl.insertAdjacentHTML('beforeend', galleryMarkup);
 
 new SimpleLightbox('.gallery-item a', {
   captionDelay: 250,
+  captionsData: 'alt',
 });
