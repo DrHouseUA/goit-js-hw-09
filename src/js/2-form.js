@@ -28,7 +28,7 @@ function handleRealodPage(event) {
   } else {
     if (localStorage.getItem('feedback-form-state') !== null) {
       console.error(
-        '❌ Виникла помилка: дані не валідні у локальному сховищі! Сховище буде очищено!'
+        '❌ Виникла помилка: дані не валідні у локальному сховищі! Сховище буде очищено! Прийдеться заповнювати форму знову😅'
       );
       localStorage.removeItem('feedback-form-state');
     }
